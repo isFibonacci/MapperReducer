@@ -5,13 +5,15 @@ Given a folder with multi-level hierarchy, this program can count the number of 
 ---
 
 ### 2. How to Compile the Program ###
-'mymake' can be compiled by a given Makefile inside the directory 'pa2'.
+'mymake' can be compiled by a given Makefile inside the directory src
 User can compile the program by ’make':
 ```
-    /pa2$ make
+    $ make
 ```
 Then an executable named 'mapreduce' will be generated. To remove the executable and the generated files, user can simply type in 'make clean'.
-
+```
+    $ make clean
+```
 ---
 
 ### 3. What exactly the program does ###
