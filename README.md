@@ -1,9 +1,4 @@
-/*test machine: csel-kh4250-14
-* date: 10/22/2019
-* name: Zhiyuan Yang, Xingwang Cheng
-* x500: yang6670, cheng830
-*/
----
+
 ### 1. Purpose of 'mapreduce' Program ###
 Given a folder with multi-level hierarchy, this program can count the number of words, per letter of the alphabet in the entire folder hierarchy. The result will be reported in the alphabetical order and redirected to a file.
 
@@ -49,23 +44,4 @@ This program can be executed via
 
 ---
 
-### 5. Individual contributions ###
-Zhiyuan Yang:
-- Phase 1
-- Phase 3
-- Fix memory leaks
-- Main function
 
-Xingwang Cheng:
-- Phase 2
-- Phase 3
-- Phase 4
-- Main function 
-
----
-### 6. Attempt to Extra Credit ###
-- Yes
-
-    
-
-# MapperReducer
