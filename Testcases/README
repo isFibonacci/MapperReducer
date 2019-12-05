@@ -1,0 +1,16 @@
+Testcases
+	- Expected_Output - The expected output for each of the test cases below. Note that the MapperInput text file content may vary according to the partitioning logic. In case it doesn't match with the one given here, do not panic.Check the discussions/announcement in Canvas for more detail.
+	- TestCase1 - Empty folder
+	- TestCase2 - Folder with 10 subfolders. Each subfolder with 20 files
+	- TestCase3 - Folder with 10 subfolders. Each subfolder with varying number of files
+	- TestCase4 - Folder with 3 levels
+						Level 1 with 10 folders
+						Level 2 with 5 folders each
+						Level 3 with 10 files each
+
+	# For extra credits
+	- TestCase5 - Folder with symbolic links
+					TestCase6/F11 and TestCase6/F12 are symbolic links for TestCase6/F1 and TestCase6/F2 respectively
+					TestCase6/F2/F5/xdm.txt is symbolic link to TestCase6/F1/F1/xah.txt
+
+

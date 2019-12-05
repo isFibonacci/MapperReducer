@@ -1,0 +1,6 @@
+../Testcases/TestCase2/F7/xez.txt
+../Testcases/TestCase2/F3/xca.txt
+../Testcases/TestCase2/F10/xhn.txt
+../Testcases/TestCase2/F1/xbg.txt
+../Testcases/TestCase2/F8/xfs.txt
+../Testcases/TestCase2/F4/xcq.txt

@@ -1,0 +1,6 @@
+../Testcases/TestCase2/F7/xfi.txt
+../Testcases/TestCase2/F5/xdl.txt
+../Testcases/TestCase2/F10/xha.txt
+../Testcases/TestCase2/F1/xao.txt
+../Testcases/TestCase2/F8/xfk.txt
+../Testcases/TestCase2/F4/xda.txt

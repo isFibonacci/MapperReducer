@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "unistd.h": "c",
+        "main.h": "c",
+        "errno.h": "c"
+    }
+}
