@@ -1,8 +1,3 @@
-/*test machine: csel-kh4250-14
-* date: 10/22/2019
-* name: Zhiyuan Yang, Xingwang Cheng
-* x500: yang6670, cheng830
-*/
 
 #include "../include/main.h"
 #include <errno.h>
