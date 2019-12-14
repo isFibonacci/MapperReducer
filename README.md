@@ -47,3 +47,5 @@ This program can be executed via
 ---
 
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
