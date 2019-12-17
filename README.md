@@ -31,15 +31,19 @@ Then an executable named 'client' will be generated. To remove the executable, u
 ---
 
 ### 3. How to run this program ###
-1. Running $ ./server <Server Port>
+```
+$ ./server <Server Port>
+```
 
-    'server' (Server socket) listens on a particular IP address and port number. After connecting to a client, it will listen to requests from client and process multiple tasks, and the send back the result to client by response. 
+'server' (Server socket) listens on a particular IP address and port number. After connecting to a client, it will listen to requests from client and process multiple tasks, and the send back the result to client by response. 
+
+```
+$ ./client <Folder Name> <# of Mappers> <Server IP> <Server Port>
+```
+
+'client' (Clients sockets) reaches out to the server socket to build a connection. First, it will complete the paht partitioning inside the given folder. Then it will spawn mapper processes to count word in each mapper file and send requests to server to update the AZLIST(which is a list for total count of words). After each client is completed, it will exit. The running log of client will be in the PA_Client folder.
 
 
-2. Running $ ./client <Folder Name> <# of Mappers> <Server IP> <Server Port>
-
-    'client' (Clients sockets) reaches out to the server socket to build a connection. First, it will complete the paht partitioning inside the given folder. Then it will spawn mapper processes to count word in each mapper file and send requests to server to update the AZLIST(which is a list for total count of words). After each client is completed, it will exit. The running log of client will be in the PA_Client folder.
-    
 ### 4. What exactly the program does ###
 This program can be executed via
 - $ ./mapreduce [folderName] [#mappers]
