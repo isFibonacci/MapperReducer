@@ -14,9 +14,33 @@ Then an executable named 'mapreduce' will be generated. To remove the executable
 ```
     $ make clean
 ```
+
+'server' and 'client' can be compiled separately.
+User can compile each of them by ’make':
+```
+    /Server$ make
+```
+Then an executable named 'server' will be generated. To remove the executable, user can simply type in 'make clean'.
+
+Same,
+```
+    /Client$ make
+```
+Then an executable named 'client' will be generated. To remove the executable, user can simply type in 'make clean'.
+
 ---
 
-### 3. What exactly the program does ###
+### 3. How to run this program ###
+1. Running $ ./server <Server Port>
+
+    'server' (Server socket) listens on a particular IP address and port number. After connecting to a client, it will listen to requests from client and process multiple tasks, and the send back the result to client by response. 
+
+
+2. Running $ ./client <Folder Name> <# of Mappers> <Server IP> <Server Port>
+
+    'client' (Clients sockets) reaches out to the server socket to build a connection. First, it will complete the paht partitioning inside the given folder. Then it will spawn mapper processes to count word in each mapper file and send requests to server to update the AZLIST(which is a list for total count of words). After each client is completed, it will exit. The running log of client will be in the PA_Client folder.
+    
+### 4. What exactly the program does ###
 This program can be executed via
 - $ ./mapreduce [folderName] [#mappers]
 
@@ -41,7 +65,7 @@ This program can be executed via
 
 ---
 
-### 4. Additional Assumptions ###
+### 5. Additional Assumptions ###
 -   After running the program, multiple files will be created. Users need to clean up these files on ther own, if they need to "mapreduce" another folder. Otherwise, the result would be incorrect since the existence of previous mappers and result files can result in unexpected effects.
 
 ---
